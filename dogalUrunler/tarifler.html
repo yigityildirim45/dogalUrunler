@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifler - Doğal Ürünler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Doğal Ürünler Mağazası</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#urunler">Ürünler</a></li>
+                <li><a href="tarifler.html">Tarifler</a></li>
+                <li><a href="faydalar.html">Faydalar</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tarifler-ana">
+            <h2>Sağlıklı Tarifler</h2>
+            <div class="urun-listesi">
+                <!-- Her ürün için kart -->
+                <div class="urun-karti" onclick="window.location.href='#bal-tarifleri'">
+                    <img src="https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bal Tarifleri">
+                    <h3>Bal Tarifleri</h3>
+                    <p>Balın kullanıldığı lezzetli ve sağlıklı tarifler</p>
+                </div>
+
+                <div class="urun-karti" onclick="window.location.href='#zeytinyagi-tarifleri'">
+                    <img src="https://images.pexels.com/photos/33783/olive-oil-salad-dressing-cooking-olive.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Zeytinyağı Tarifleri">
+                    <h3>Zeytinyağı Tarifleri</h3>
+                    <p>Zeytinyağı ile hazırlanan enfes tarifler</p>
+                </div>
+
+                <div class="urun-karti" onclick="window.location.href='#kekik-tarifleri'">
+                    <img src="https://images.pexels.com/photos/4198139/pexels-photo-4198139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Kekik Tarifleri">
+                    <h3>Kekik Tarifleri</h3>
+                    <p>Kekik ile lezzetlenen tarifler</p>
+                </div>
+
+                <div class="urun-karti" onclick="window.location.href='#propolis-tarifleri'">
+                    <img src="https://images.pexels.com/photos/27907943/pexels-photo-27907943/free-photo-of-doga-yaz-sari-hayvan.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Propolis Tarifleri">
+                    <h3>Propolis Tarifleri</h3>
+                    <p>Propolis ile hazırlanan karışımlar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Her ürün için ayrı tarif bölümleri -->
+        <section id="bal-tarifleri" class="tarif-detay">
+            <h2>Bal Tarifleri</h2>
+            <div class="tarif-icerik">
+                <article class="tarif">
+                    <h3>Ballı Zencefil Çayı</h3>
+                    <img src="https://images.pexels.com/photos/5501118/pexels-photo-5501118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ballı Zencefil Çayı">
+                    <div class="malzemeler">
+                        <h4>Malzemeler</h4>
+                        <ul>
+                            <li>1 tatlı kaşığı organik bal</li>
+                            <li>1 parça taze zencefil</li>
+                            <li>1 bardak sıcak su</li>
+                        </ul>
+                    </div>
+                    <div class="yapilis">
+                        <h4>Hazırlanışı</h4>
+                        <ol>
+                            <li>Zencefili ince dilimleyin</li>
+                            <li>Sıcak suya ekleyin ve 5 dakika demleyin</li>
+                            <li>Balı ekleyip karıştırın</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="tarif">
+                    <h3>Ballı Süt</h3>
+                    <img src="https://images.pexels.com/photos/7474372/pexels-photo-7474372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ballı Süt">
+                    <div class="malzemeler">
+                        <h4>Malzemeler</h4>
+                        <ul>
+                            <li>1 bardak süt</li>
+                            <li>1 tatlı kaşığı bal</li>
+                            <li>Tarçın (isteğe bağlı)</li>
+                        </ul>
+                    </div>
+                    <div class="yapilis">
+                        <h4>Hazırlanışı</h4>
+                        <ol>
+                            <li>Sütü ısıtın</li>
+                            <li>Balı ekleyip karıştırın</li>
+                            <li>İsteğe bağlı tarçın ekleyin</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="geri-don">Tariflere Geri Dön</a>
+        </section>
+
+        <!-- Zeytinyağı tarifleri bölümü -->
+        <section id="zeytinyagi-tarifleri" class="tarif-detay">
+            <h2>Zeytinyağı Tarifleri</h2>
+            <div class="tarif-icerik">
+                <article class="tarif">
+                    <h3>Zeytinyağlı Sebze Salatası</h3>
+                    <img src="https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Zeytinyağlı Sebze Salatası">
+                    <div class="malzemeler">
+                        <h4>Malzemeler</h4>
+                        <ul>
+                            <li>3 yemek kaşığı sızma zeytinyağı</li>
+                            <li>2 domates</li>
+                            <li>1 salatalık</li>
+                            <li>1 kırmızı soğan</li>
+                            <li>Taze fesleğen</li>
+                            <li>Tuz ve karabiber</li>
+                        </ul>
+                    </div>
+                    <div class="yapilis">
+                        <h4>Hazırlanışı</h4>
+                        <ol>
+                            <li>Tüm sebzeleri küp şeklinde doğrayın</li>
+                            <li>Fesleğeni ince kıyın</li>
+                            <li>Zeytinyağı, tuz ve karabiberi ekleyin</li>
+                            <li>Tüm malzemeleri nazikçe karıştırın</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="tarif">
+                    <h3>Zeytinyağlı Patates Püresi</h3>
+                    <img src="https://images.pexels.com/photos/6941026/pexels-photo-6941026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Zeytinyağlı Patates Püresi">
+                    <div class="malzemeler">
+                        <h4>Malzemeler</h4>
+                        <ul>
+                            <li>4 orta boy patates</li>
+                            <li>4 yemek kaşığı zeytinyağı</li>
+                            <li>1/2 bardak süt</li>
+                            <li>Tuz</li>
+                            <li>Karabiber</li>
+                        </ul>
+                    </div>
+                    <div class="yapilis">
+                        <h4>Hazırlanışı</h4>
+                        <ol>
+                            <li>Patatesleri haşlayın</li>
+                            <li>Ezin ve sütü ekleyin</li>
+                            <li>Zeytinyağı, tuz ve karabiberi ekleyin</li>
+                            <li>Krema kıvamına gelene kadar karıştırın</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="geri-don">Tariflere Geri Dön</a>
+        </section>
+
+        <!-- Kekik tarifleri bölümü -->
+        <section id="kekik-tarifleri" class="tarif-detay">
+            <h2>Kekik Tarifleri</h2>
+            <div class="tarif-icerik">
+                <article class="tarif">
+                    <h3>Kekikli Çay</h3>
+                    <img src="https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Kekikli Çay">
+                    <div class="malzemeler">
+                        <h4>Malzemeler</h4>
+                        <ul>
+                            <li>1 tatlı kaşığı kuru kekik</li>
+                            <li>1 bardak sıcak su</li>
+                            <li>İsteğe bağlı bal</li>
+                        </ul>
+                    </div>
+                    <div class="yapilis">
+                        <h4>Hazırlanışı</h4>
+                        <ol>
+                            <li>Kekiği sıcak suya ekleyin</li>
+                            <li>5 dakika demlendirin</li>
+                            <li>Süzün ve isteğe bağlı bal ekleyin</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="geri-don">Tariflere Geri Dön</a>
+        </section>
+
+        <!-- Propolis tarifleri bölümü -->
+        <section id="propolis-tarifleri" class="tarif-detay">
+            <h2>Propolis Tarifleri</h2>
+            <div class="tarif-icerik">
+                <article class="tarif">
+                    <h3>Propolisli Süt</h3>
+                    <img src="https://images.pexels.com/photos/7474375/pexels-photo-7474375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Propolisli Süt">
+                    <div class="malzemeler">
+                        <h4>Malzemeler</h4>
+                        <ul>
+                            <li>1 bardak süt</li>
+                            <li>1 tatlı kaşığı propolis</li>
+                            <li>1 tatlı kaşığı bal (isteğe bağlı)</li>
+                        </ul>
+                    </div>
+                    <div class="yapilis">
+                        <h4>Hazırlanışı</h4>
+                        <ol>
+                            <li>Sütü ısıtın.</li>
+                            <li>Propolisi ekleyin ve iyice karıştırın.</li>
+                            <li>İsteğe bağlı olarak bal ekleyin ve karıştırın.</li>
+                            <li>Sıcak servis yapın.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="tarif">
+                    <h3>Propolisli Bitki Çayı</h3>
+                    <img src="https://images.pexels.com/photos/5501118/pexels-photo-5501118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Propolisli Bitki Çayı">
+                    <div class="malzemeler">
+                        <h4>Malzemeler</h4>
+                        <ul>
+                            <li>1 tatlı kaşığı propolis</li>
+                            <li>1 bardak sıcak su</li>
+                            <li>İsteğe bağlı olarak limon ve bal</li>
+                        </ul>
+                    </div>
+                    <div class="yapilis">
+                        <h4>Hazırlanışı</h4>
+                        <ol>
+                            <li>Sıcak suyu bir fincana dökün.</li>
+                            <li>Propolisi ekleyin ve 5 dakika demlenmesini bekleyin.</li>
+                            <li>İsteğe bağlı olarak limon ve bal ekleyin.</li>
+                            <li>Karıştırın ve sıcak servis yapın.</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="geri-don">Tariflere Geri Dön</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Doğal Ürünler Mağazası. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html> 
