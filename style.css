@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #3a5a40;
-    --secondary-color: #588157;
-    --accent-color: #a3b18a;
+    --primary-color: #1F4529;
+    --secondary-color: #47663B;
+    --accent-color: #E8ECD7;
     --background-color: #fefefe;
     --text-color: #344e41;
 }
@@ -53,12 +53,28 @@ main {
 }
 
 .hero {
-    text-align: center;
-    padding: 4rem 2rem;
-    background-color: var(--accent-color);
+    background-image: url('https://images.pexels.com/photos/1872902/pexels-photo-1872902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
     color: white;
-    margin-bottom: 3rem;
-    border-radius: 10px;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h2, .hero p {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h2 {
@@ -67,20 +83,20 @@ main {
 }
 
 .urun-listesi {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 2rem;
-    padding: 2rem 0;
 }
 
 .urun-karti {
+    flex: 1 1 calc(25% - 2rem);
     background: white;
-    border: 1px solid #eee;
-    padding: 1rem;
-    text-align: center;
     border-radius: 10px;
-    transition: transform 0.3s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .urun-karti:hover {
@@ -89,7 +105,7 @@ main {
 
 .urun-karti img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -97,7 +113,14 @@ main {
 
 .urun-karti h3 {
     color: var(--primary-color);
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.urun-karti p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .etiketler {
@@ -646,4 +669,4 @@ footer {
     .urun-karti img {
         height: 180px; /* Daha küçük ekranlarda daha az yükseklik */
     }
-} 
+}
